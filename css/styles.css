@@ -954,6 +954,28 @@ ol {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.checkbox {
+  margin-bottom: var(--card-set-gap);
+}
+
+.
+
+.policy-text {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: calc(24/14);
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.contract {
+  color: var(--blue-color);
+  text-decoration: underline;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
 .btn-modal {
   display: flex;
   align-items: center;
