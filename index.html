@@ -595,18 +595,18 @@
             <label for="user-comment" class="input-lable">Коментар</label>
             <textarea name="user-comment" id="user-comment" class="input-comment" placeholder="Введіть текст"></textarea>
           </div>
-          <div class="checkbox">
-            <input type="checkbox" class="checkbox-input" name="policy" id="policy" value="accept">
-              <lable class="policy-text" for="policy">
-                <span>
+          <!-- <div class="checkbox-input"> -->
+            <lable class="policy-text"></lable>
+              <input type="checkbox" class="checkbox" name="policy" value="accept">
+                <span class="icon">
                   <svg class="icon-checkbox" weight="14" height="13">
                     <use href="./image/symbol-defs.svg#icon-check"></use>
                   </svg>
                 </span>
                 Погоджуюся з розсилкою та приймаю<a class="contract">Умови договору</a>
-              </lable>
-            </input>
-          </div>
+              </input>
+            </lable>
+          <!-- </div> -->
             <button class="btn-modal" type="submit">Відправити</button>
         </form>
       </div>
