@@ -941,6 +941,7 @@ ol {
   line-height: calc(14/12);
   letter-spacing: 0.01em;
   resize: none;
+  margin-bottom: 20px;
 }
 
 .input-comment:focus {
@@ -954,43 +955,59 @@ ol {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.checkbox {
-  margin-bottom: var(--card-set-gap);
-}
 
-/* .checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+/*--------- CHECKBOX MODAL----------*/
+
+.checkbox {
   appearance: none;
   position: absolute;
-} */
-
-.icon {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  background-color: rgb(230, 59, 59);
 }
 
-.checkbox:checked +.icon {
-  background-color: var(--blue-color);
+.contract {
+  color: var(--blue-color);
+  font-size: 14px;
+  line-height: calc(24/14);
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
-.policy-text {
-  display: inline-block;
+.label-policy {
+  display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 14px;
   line-height: calc(24/14);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
-.contract {
-  color: var(--blue-color);
-  text-decoration: underline;
-  margin-left: 5px;
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
+
+.icon-checkbox {
+  fill: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked + .icon {
+  background-color: var(--blue-color);
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*--------- BUTTON MODAL----------*/
 
 .btn-modal {
   display: flex;
